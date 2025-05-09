@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Constantin Chiciu | Professional Builder & Contractor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html">Constantin Chiciu</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="portfolio-header">
+        <div class="container">
+            <h1>My Work</h1>
+            <p>A showcase of renovations, construction projects, and craftsmanship</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="images/1540_6996.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="images/1540_6997.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="images/1540_6999.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="images/1540_7001.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="images/1540_7002.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="images/1540_7003.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(6)">
+                    <img src="images/1540_7004.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(7)">
+                    <img src="images/1540_7005.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(8)">
+                    <img src="images/1540_7006.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(9)">
+                    <img src="images/1540_7007.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(10)">
+                    <img src="images/33846_0.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(11)">
+                    <img src="images/33846_1.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(12)">
+                    <img src="images/33846_2.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(13)">
+                    <img src="images/36865_0.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(14)">
+                    <img src="images/36865_1.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(15)">
+                    <img src="images/37269_0.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(16)">
+                    <img src="images/52361_0.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(17)">
+                    <img src="images/59120_0.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(18)">
+                    <img src="images/59475_0.jpg" alt="Construction Work">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(19)">
+                    <img src="images/59475_1.jpg" alt="Construction Work">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <a class="lightbox-prev" onclick="changeLightboxSlide(-1)">&#10094;</a>
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" src="">
+            </div>
+            <a class="lightbox-next" onclick="changeLightboxSlide(1)">&#10095;</a>
+        </div>
+        <div id="lightbox-counter" class="lightbox-counter"></div>
+    </div>
+
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>What Are You Waiting For?</h2>
+            <p class="cta-subtitle">Get your free quote now</p>
+            
+            <div class="contact-buttons">
+                <a href="tel:07817100971" class="contact-action-button" aria-label="Call Constantin Chiciu">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <span>Phone</span>
+                        <span class="button-subtitle">07817 100 971</span>
+                    </div>
+                </a>
+                
+                <a href="mailto:alcomec@gmail.com" class="contact-action-button" aria-label="Email Constantin Chiciu">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <span>Email</span>
+                        <span class="button-subtitle">alcomec@gmail.com</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Constantin Chiciu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html> 
